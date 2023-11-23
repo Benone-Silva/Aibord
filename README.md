@@ -10,10 +10,10 @@ Ao entrar na página do site, o usuário se deparará com o cabeçalho, no qual 
 
 # TECNOLOGIAS USADAS
 # Linguagens:
-    ▪️Java Web
+    ▪️ Java Web;
     ▪️ Javascript
 # Banco de dados:
-     ▪️ Mysql
+     ▪️ MySQL
 # Hospedagem do site:
       ▪️ GitHub
 # APIs:
