@@ -1,5 +1,5 @@
 # Projeto Integrador – “Airboard”
-Repositório dedicado para a matéria Projetos Integradores da turma I2263TD. Este projeto integrador se chamará "Airboard".
+Repositório dedicado para a matéria Projetos Integradores da turma I2263TD. Este projeto se chamará “Airboard”.
 
 # Participantes
 ÂNGELO BENONE, HERBERT PAZ, RYAN TAVARES, VALDEMIRO FACUNDO E YURI OLIVEIRA
