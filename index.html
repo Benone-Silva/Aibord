@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airbord Viagens</title>
+    <title>airbord</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagem/d.ico" type="image/x-icon">
 </head>
 <body>
    
@@ -13,12 +17,14 @@
         <img src="./imagem/logo.png" width="80px" height="80px">
         <nav>
         <ul class="menu">
-        <li><a href="/">Início</a></li>
-        <li><a href="/">Destino</a></li>
-        <li><a href="/">Hospedagens</a></li>
-        <li><a href="/">Voos</a></li>
-        <li><a href="/">Programas beneficentes</a></li>
-        <li><a href="/">Contato</a></li>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="./Usuario/loginusuario.html">Entrar</a></li>
+        <li><a href="./Usuario/cadastrousuario.html">Cadastrar</a></li>
+        <li><a href="#destino">Destino</a></li>
+        <li><a href="#hospedagem">Hospedagens</a></li>
+        <li><a href="#voos">Voos</a></li>
+        <li><a href="#contato">Contato</a></li> 
+        <li><a href="./ADM/loginAdm.html">Suporte</a></li>
         </ul>
         </nav>
     </header>
@@ -29,149 +35,293 @@
     <div class="pesquisa">
         <input type="text" placeholder="Pesquisar...">
         <button type="submit"><i class="fa fa-search"></i></button>
-      </div>
-      <div class="packages">
+    </div>
+
+    <div id="destino" class="packages">
         <div class="package">
-          <img src="imagem/salinas pacote.jpg" alt="Package Image" />
-          <h2 class="package-title">Pacotes all inclusive nos Resorts Salinas Maragogi</h3>
-          <p class="package-description">Poucos lugares são capazes de proporcionar momentos tão memoráveis quanto o Salinas Maragogi Resort, renomado all inclusive situado à beira da Praia de Maragogi. Não é à toa que ele foi eleito pelos nossos leitores o melhor resort do Brasil.
+            <img src="imagem/salinas pacote.jpg" alt="Package Image" />
+            <h2 class="package-title">Pacotes all inclusive nos Resorts Salinas Maragogi</h3>
+            <p class="package-description">Poucos lugares são capazes de proporcionar momentos tão memoráveis quanto o Salinas Maragogi Resort, renomado all inclusive situado à beira da Praia de Maragogi. Não é à toa que ele foi eleito pelos nossos leitores o melhor resort do Brasil.
             
-          </p>
-          <div class="package-info">
-            <span class="package-price">$2,500</span>
-            <button class="btn btn-primary">Saber mais</button>
-          </div>
+            </p>
+            <div class="package-info">
+                <span class="package-price">$2,500</span>
+                <button class="btn btn-primary"> <a href="detalha/detalha.html"> Saber mais</a></button>
+            </div>
         </div>
       
         <div class="package">
-          <img src="imagem/floripa pacote.jpg" alt="Package Image" />
-          <h3 class="package-title">Partiu Floripa! Voos mais hotel em Jurerê Internacional</h3>
-          <p class="package-description">
-             Ilha da Magia, apelido carinhoso de Florianópolis, Jurerê Internacional é uma das praias mais famosas pelas paisagens naturais e, claro, por seus badalados beach clubs.  Por lá, você pode se hospedar no Jurerê Beach Village ou no IL Campanario…
-          </p>
-          <div class="package-info">
-            <span class="package-price">$1500</span>
-            <button class="btn btn-primary">Saber mais</button>
-          </div>
+            <img src="imagem/floripa pacote.jpg" alt="Package Image" />
+            <h3 class="package-title">Partiu Floripa! Voos mais hotel em Jurerê Internacional</h3>
+            <p class="package-description">
+                Ilha da Magia, apelido carinhoso de Florianópolis, Jurerê Internacional é uma das praias mais famosas pelas paisagens naturais e, claro, por seus badalados beach clubs.  Por lá, você pode se hospedar no Jurerê Beach Village ou no IL Campanario…
+            </p>
+            <div class="package-info">
+                <span class="package-price">$1500</span>
+                <button class="btn btn-primary"> <a href="detalha/detalha2.html"> Saber mais </a></button>
+            </div>
         </div>
       
         <div class="package">
-          <img src="imagem/jericopacote.jpg" alt="Package Image" />
-          <h3 class="package-title">Pacotes baratos! Voos mais hospedagem em Jericoacoara</h3>
-          <p class="package-description">
-            Uma das melhores praias do Brasil te espera com pacotes de viagem econômicos! Você viaja com conforto, hotel e voo incluídos e, o melhor, economizando o teu precioso dinheiro. Encontramos pacotes para Jericoacoara, com passagens aéreas mais hospedagem de 4 a 7…
-          </p>
-          <div class="package-info">
-            <span class="package-price">$1059</span>
-            <button class="btn btn-primary">Saber mais</button>
-          </div>
-        </div>
-      </div>
-      <h2>Outros destinos</h2>
-      <p>Aproveite as melhores ofertas e conheça os melhores lugares</p>
-   <section class="flex">
-    <div>
-       <img id="img-1" src="imagem/bellll1.jpg"alt="">
-       <p> Belém do Pará</p>
-     </div>
-     <div>
-         <img id="img-1" src="imagem/salvador.jpg"alt="">
-         <p>salvador-Ba</p>
-       </div>
-       <div>
-         <img id="img-1" src="imagem/natal.jpg"alt="">
-         <p> natal</p>
-       </div>
-       <div>
-         <img id="img-1" src="imagem/Salinopolis.jpg"alt="">
-         <p>Salinopolis</p>
-       </div>
-       <div>
-         <img id="img-1" src="imagem/São Luis do maranhao.jpg"alt="">
-         <p> São Luis do Maranhão</p>
-       </div>
-       <div>
-         <img id="img-1" src="imagem/jericoacoara.jpg"alt="">
-         <p> Jericoacoara</p>
-       </div>
+            <img src="imagem/jericopacote.jpg" alt="Package Image" />
+            <h3 class="package-title">Pacotes baratos! Voos mais hospedagem em Jericoacoara</h3>
+            <p class="package-description">
+                Uma das melhores praias do Brasil te espera com pacotes de viagem econômicos! Você viaja com conforto, hotel e voo incluídos e, o melhor, economizando o teu precioso dinheiro. Encontramos pacotes para Jericoacoara, com passagens aéreas mais hospedagem de 4 a 7…
+            
+                Uma das melhores praias do Brasil te espera com pacotes de viagem econômicos! Você viaja com conforto, hotel e voo incluídos e, o melhor, economizando o teu precioso dinheiro. Encontramos pacotes para Jer
 
-  </section>
- <div class="hotel-offers">
-    <h2>Ofertas de hotéis</h2>
-    <p>Encontre os melhores hotéis para sua estadia</p>
-    <ul>
-      <li>
-        <div class="hotel-image">
-          <img src="imagem/ibis.webp" alt="Hotel image">
-        </div>
-        <div class="hotel-info">
-          <h3>ibis Salvador Rio VermelhoAbre numa nova janela
-          </h3>
-          <span class="hotel-rating">4.5</span>
-          <p class="hotel-location">Stiep, Salvador</p>
-          <p class="hotel-price">R$ 1200</p>
-          <button>Reservar</button>
-        </div>
-      </li>
-      <li>
+                Uma das melhores praias do Brasil te espera com pacotes de
 
-    <div class="promo-box">
-      <div class="promo-image">
-        <img src="imagem/hotel2.webp" alt="Imagem promocional">
-      </div>
-      <div class="promo-info">
-        <h3>Sotero Hotel by Castelo Itaipavar</h3>
-        <p>A apenas 2 km da Praia do Jardim de Alah, o Sotero oferece piscina na cobertura com vista do mar, academia e sauna. Para sua comodidade, um buffet de café da manhã é servido diariamente.</p>
-        <a href="#" class="promo-link">Saiba mais</a>
-      </div>
-    </div>
-  </div>
-  <div class="promo-box">
-    <div class="promo-image">
-      <img src="imagem/hotel 1.webp" alt="Imagem promocional">
-    </div>
-    <div class="promo-info">
-      <h3>Pituva Praiamar</h3>
-      <p>ituado em Salvador, a 200 metros da Praia da Pituba, o Pituba Praiamar Hotel oferece acomodações com academia, estacionamento privativo gratuito, restaurante e bar.</p>
-      <a href="#" class="promo-link">Saiba mais</a>
-    </div>
-  </div>
+                Uma das melhores pr
+</p>
+            <div class="package-info">
+                
+               
+<span class="package-price">$1059</span>
+                
+               
+<button class="btn btn-primary"> <a href="detalha/detalha3.html"> Saber mais</a></button>
+            </div>
+        </div>
+    
+   
 </div>
-  <div class="headerr">
-    <div class="headerr-text">
-      <h1>Suas próximas férias</h>
-    </div>
-    <img src="imagem/capaalte.jpg" alt="Minha imagem">
-  </div>
+    
+    <h2>Outros destinos</h2>
+    
+   
+<p>Aproveite as melhores ofertas e conheça os melhores lugares</p>
+    
+    <section class="flex">
+        <div>
+           
+          
+<img id="img-1" src="imagem/bellll1.jpg" alt="">
+           
+           
+<p>Belém do Pará</p>
+         </div>
+         <div>
+             <img id="img-1" src="imagem/salvador.jpg" alt="">
+             
+            
+<p>Salvador-Ba</p>
+           </div>
+           <div>
+             
+             
+<img id="img-1" src="imagem/natal.jpg" alt="">
+             <p>Natal</p>
+           </div>
+           <div>
+             <img id="img-1" src="imagem/Salinopolis.jpg" alt="">
+             <p>Salinopolis</p>
+           
+          
+</div>
+           <div>
+             <img id="img-1" src="imagem/São Luis do maranhao.jpg" alt="">
+             
+             
+<p>São Luis do Maranhão</p>
+           </div>
+           <div>
+             
+            
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h4>Contato</h4>
-          <ul class="list-unstyled">
-            <li><i class="fa fa-map-marker"></i> Endereço: Rua Cipriana Garcia, 106 - Ananindeua, Pa</li>
-            <li><i class="fa fa-phone"></i> Telefone: (91) 91985408941</li>
-            <li><i class="fa fa-envelope"></i> E-mail: Yurigeooliveira@gmail.com.br</li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h4>Links Úteis</h4>
-          <ul class="list-unstyled">
-            <li><a href="#">Sobre Nós</a></li>
-            <li><a href="#">Termos de Uso</a></li>
-            <li><a href="#">Política de Privacidade</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h4>Siga-nos</h4>
-          <ul class="list-unstyled social-icons">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-          </ul>
-        </div>
-      </div>
+            
+<img id="img-1" src="imagem/jericoacoara.jpg" alt="">
+             <p>Jericoacoara</p>
+           </div>
+    </section>
+    
+    
+    
+    
+<div id="hospedagem" class="hotel-offers">
+        <h2>Ofertas de hotéis</h2>
+        <p>Encontre os melhores hotéis para sua estadia</p>
+        <ul>
+            <li>
+                <div class="hotel-image">
+                    <img src="imagem/ibis.webp" alt="Hotel image">
+                </div>
+                <div class="hotel-info">
+                    <h3>ibis Salvador Rio Vermelho</h3>
+                    <span class="hotel-rating">4.5</span>
+                    <p class="hotel-location">Stiep, Salvador</p>
+                    <p class="hotel-price">R$ 1200</p>
+                    <button>Reservar</button>
+                </div>
+            </li>
+            <li>
+                
+               
+<div class="promo-box">
+                    <div class="promo-image">
+                        <img src="imagem/hotel2.webp" alt="Imagem promocional">
+                    
+                   
+</div>
+                    <div class="promo-info">
+                        <h3>Sotero Hotel by Castelo Itaipavar</h3>
+                        <p>A apenas 2 km da Praia do Jardim de Alah, o Sotero oferece piscina na cobertura com vista do mar, academia e sauna. Para sua comodidade, um buffet de café da manhã é servido diariamente.</p>
+                        <a href="#" class="promo-link">Saiba mais</a>
+                    
+                    </div>
+</div>
+                </div>
+            </li>
+            <li>
+                <div class="promo-box">
+                    <div class="promo-image">
+                        <img src="imagem/hotel 1.webp" alt="Imagem promocional">
+                    </div>
+                    <div class="promo-info">
+                        <h3>Pituva Praiamar</h3>
+                        <p>Situado em Salvador, a 200 metros da Praia da Pituba, o Pituba Praiamar Hotel oferece acomodações com academia, estacionamento privativo gratuito, restaurante e bar.</p>
+                        <a href="#" class="promo-link">Saiba mais</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
-  </footer>
+    
+    <div class="headerr">
+        <div class="headerr-text">
+            <h1>Suas próximas férias</h>
+        </div>
+        <img src="imagem/capaalte.jpg" alt="Minha imagem">
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="servicosExtras"> 
+
+                  <div>
+                    <ul class="list-unstyled">
+                       <li id="servicosExtrasText">Países</li>
+                       <li id="servicosExtrasText">Regiões</li>
+                       <li id="servicosExtrasText">Cidades</li>
+                       <li id="servicosExtrasText">Bairros</li>
+                       <li id="servicosExtrasText">Aeroportos</li>
+                       <li id="servicosExtrasText">Hoteís</li>
+                    </ul>
+                  </div>
+                      <ul class="list-unstyled">
+                         <li id="servicosExtrasText">Casas e Apartamentos</li>
+                         <li id="servicosExtrasText">Resorts</li>
+                         <li id="servicosExtrasText">Vilas</li>
+                         <li id="servicosExtrasText">Holstels</li>
+                         <li id="servicosExtrasText">Cama e café</li>
+
+                      </ul>
+                  <div> 
+                      <ul class="list-unstyled">
+                        <li id="servicosExtrasText">Lugares Únicos para ficar</li>
+                        <li id="servicosExtrasText">Todos os destinos</li>
+                        <li id="servicosExtrasText">Todos os destinos de Voos</li>
+                        <li id="servicosExtrasText">Todas as agências de aluguel de carros</li>
+                        <li id="servicosExtrasText">Ofertas de viagem</li>
+                      </ul>
+                  </div>
+                  
+                  <div>
+                    <ul class="list-unstyled">
+                        <li>Casas e Apartamentos</li>
+                        <li>Casas e Apartamentos</li>
+                        <li>Casas e Apartamentos</li>
+                        <li>Casas e Apartamentos</li>
+                        <li>Casas e Apartamentos</li>
+                    </ul>
+                  </div>
+
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-6">
+                      <h4>Contato</h4>
+                    <ul class="list-unstyled">
+                        <li class="contato"> Endereço: Rua Cipriana Garcia, 106 - Ananindeua, PA</li>
+                        <li class="contato"> Telefone: (91) 91985408941</li>
+                        <li class="contato"> E-mail: yurigeooliveira@gmail.com</li>
+                    </ul>
+              </div>
+
+                <div class="col-md-3">
+                    <h4>Links Úteis</h4>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h4>Siga-nos</h4>
+                    <ul class="list-unstyled social-icons">
+                        <li><img src="./imagem/instagram.png" height="55px" width="55px"></li>
+                        <li><img src="./imagem/facebook.png" height="55px" width="55px"></li>
+                        <li><img src="./imagem/whatsapp.png" height="55px" width="55px"></li>
+                        <li><img src="./imagem/twitter.png" height="55px" width="55px"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <p>Todos os Direitos Reservados - Airbod 2023</p>
+    </footer>
+
+    <script>
+        // Função para redirecionar para a página inicial ao clicar no menu "Início"
+        document.querySelector("ul.menu li:nth-child(1) a").addEventListener("click", function(){
+            window.location.href = "/";
+        });
+
+        // Função para redirecionar para a página de login ao clicar no menu "Entrar"
+        document.querySelector("ul.menu li:nth-child(2) a").addEventListener("click", function(){
+            window.location.href = "/login";
+        });
+
+        // Função para redirecionar para a página de destinos ao clicar no menu "Destino"
+        document.querySelector("ul.menu li:nth-child(3) a").addEventListener("click", function(){
+            window.location.href = "/destinos";
+        });
+
+        // Função para redirecionar para a página de hospedagens ao clicar no menu "Hospedagens"
+        document.querySelector("ul.menu li:nt"); 
+
+        // Função para redirecionar para a página inicial ao clicar no menu "Início"
+        document.querySelector("ul.menu li:nth-child(1) a").addEventListener("click", function(){
+            window.location.href = "/";
+        });
+
+        // Função para redirecionar para a página de login ao clicar no menu "Entrar"
+        document.querySelector("ul.menu li:nth-child(2) a").addEventListener("click", function(){
+            window.location.href = "/login";
+        });
+
+        // Função para redirecionar para a página de destinos ao clicar no menu "Destino"
+        document.querySelector("ul.menu li:nth-child(3) a").addEventListener("click", function(){
+            window.location.href = "/destinos";
+        });
+
+        // Função para redirecionar para a página de hospedagens ao clicar no menu "Hospedagens"
+        document.querySelector("ul.menu li:nth-child(4) a").addEventListener("click", function(){
+            window.location.href = "/hospedagens";
+        });
+
+        // Função para redirecionar para a página de voos ao clicar no menu "Voos"
+        document.querySelector("ul.menu li:nth-child(5) a").addEventListener("click", function(){
+            window.location.href = "/voos";
+        });
+
+        // Função para redirecionar para a página de contato ao clicar no menu "Contato"
+        document.querySelector("ul.menu li:nth-child(6) a").addEventListener("click", function(){
+            window.location.href = "/contato";
+        });
+    </script>
+</body>
 </html>
