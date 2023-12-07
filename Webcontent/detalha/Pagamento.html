@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="seu.pacote.Pagamento" %>
+    <meta charset="UTF-8">
+    <title>Formulário de Pagamento</title>
+    <style>
+        
+        body {
+            background-color: #f5f5f5; /* Cor de fundo neutra */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 350px;
+            padding: 20px;
+            background-color: #fff; /* Cor de fundo do formulário */
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #3498db; /* Cor do título que lembra água/praia */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #34495e; /* Cor do texto do rótulo */
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="text"]:focus, input[type="password"]:focus {
+            outline: none;
+            border: 1px solid #3498db; /* Cor da borda quando focado */
+        }
+
+        button {
+            background-color: #3498db; /* Cor de fundo do botão que lembra água/praia */
+            color: #fff; /* Cor do texto do botão */
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9; /* Cor de fundo do botão quando hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Pagamento</h1>
+        <form>
+            <label for="numero-cartao">Número do Cartão</label>
+            <input type="text" id="numero-cartao" name="numero-cartao" required>
+
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" name="cvv" required>
+
+            <label for="data-vencimento">Data de Vencimento</label>
+            <input type="text" id="data-vencimento" name="data-vencimento" required>
+
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" name="cpf" required>
+
+            <label for="nome-usuario">Nome do Usuário</label>
+            <input type="text" id="nome-usuario" name="nome-usuario" required>
+
+            <button type="submit">Pagar</button>
+        </form>
+    </div>
+</body>
+</html>
