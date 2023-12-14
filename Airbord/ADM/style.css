@@ -5,13 +5,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- font-family: sans-serif;
+    font-family: sans-serif;
+    
 }
-
+body{
+    background-color: #525151;
+}
 /*Barra de navegação*/
 nav{
 width: 100%;
-position: fixed;
 background-color: rgb(16, 165, 165);
 box-shadow: 5px 5px 30px rgba(0, 0, 0, 15%);
 display: flex;
@@ -171,7 +173,7 @@ table {
     border-radius: .8rem;
     overflow: hidden;
     position: relative;
-    top: 80px;
+    top: 60px;
     left: 8%;
 
 }
@@ -186,7 +188,7 @@ thead th {
 position: sticky;
 top: 0;
 left: 0;
-background-color: #4b0082;
+background-color: #730082;
 color:white
 }
 table, th{
